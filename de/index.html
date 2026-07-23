@@ -35,10 +35,8 @@
 
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="preload" as="image" href="/nicola-luessi-portrait.webp" type="image/webp">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&amp;family=DM+Sans:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="preload" href="/assets/fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/dm-serif-display-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
 
   <script type="application/ld+json">
@@ -71,7 +69,7 @@
         "url": "https://iloveseo.ch/",
         "image": {
           "@type": "ImageObject",
-          "url": "https://iloveseo.ch/nicola-luessi-portrait.webp",
+          "url": "https://iloveseo.ch/nicola-luessi-portrait-800.webp",
           "width": 800,
           "height": 1000,
           "caption": "Porträt von Nicola Lüssi"
@@ -146,7 +144,7 @@
 
   <header class="site-header">
     <a class="site-brand" href="/de/" aria-label="Nicola Lüssi, Startseite">
-      <img src="/heart-128.png" width="28" height="28" alt="">
+      <img src="/heart-56.png" width="28" height="28" alt="">
       <span>Nicola Lüssi</span>
     </a>
     <nav class="primary-nav" aria-label="Hauptnavigation">
@@ -173,7 +171,20 @@
         </div>
       </div>
       <figure class="portrait-card">
-        <img src="/nicola-luessi-portrait.webp" width="800" height="1000" alt="Porträt von Nicola Lüssi" fetchpriority="high" decoding="async">
+        <picture>
+          <source
+            type="image/avif"
+            srcset="/nicola-luessi-portrait-400.avif 400w, /nicola-luessi-portrait-800.avif 800w"
+            sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 920px) 430px, 330px">
+          <img
+            src="/nicola-luessi-portrait-800.webp"
+            srcset="/nicola-luessi-portrait-400.webp 400w, /nicola-luessi-portrait-800.webp 800w"
+            sizes="(max-width: 680px) calc(100vw - 48px), (max-width: 920px) 430px, 330px"
+            width="800"
+            height="1000"
+            alt="Porträt von Nicola Lüssi"
+            decoding="async">
+        </picture>
         <figcaption>
           <div>
             <p class="hero-card-label">Aktuell</p>
