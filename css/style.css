@@ -637,6 +637,23 @@ a {
   text-underline-offset: 4px;
 }
 
+.education-grade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  margin: 18px 0 0;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.education-grade strong {
+  color: var(--red);
+  font-size: 0.86rem;
+}
+
 .education-note {
   margin-top: 22px;
   padding-top: 18px;
