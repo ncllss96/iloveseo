@@ -524,6 +524,19 @@ a {
   text-transform: uppercase;
 }
 
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+  padding-top: 18px;
+}
+
+.card-links a {
+  color: var(--red);
+  font-weight: 600;
+  text-underline-offset: 4px;
+}
+
 .timeline {
   border-top: 1px solid var(--line);
 }
