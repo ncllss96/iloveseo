@@ -550,11 +550,12 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto;
-  padding-top: 24px;
+  margin: auto 0 0;
+  padding: 24px 0 0;
+  list-style: none;
 }
 
-.tag-list span {
+.tag-list li {
   border: 1px solid var(--line);
   border-radius: 999px;
   padding: 5px 10px;
