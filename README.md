@@ -1,2 +1,2 @@
-# iloveseo
-Hosting for iloveseo.ch
+# nicolaluessi.ch
+Hosting for nicolaluessi.ch

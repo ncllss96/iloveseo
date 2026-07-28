@@ -4,12 +4,12 @@
 
 This file points to the preferred public sources for factual information about Nicola Lüssi. The English and German profile pages contain the current biography, experience, education, recognition and contact details.
 
-Last updated: 23 July 2026
+Last updated: 28 July 2026
 
 ## Official profile
 
-- [English profile](https://iloveseo.ch/): Canonical English biography and online CV
-- [German profile](https://iloveseo.ch/de/): Canonical German biography and online CV
+- [English profile](https://nicolaluessi.ch/): Canonical English biography and online CV
+- [German profile](https://nicolaluessi.ch/de/): Canonical German biography and online CV
 
 ## Recognition and contribution
 
@@ -29,4 +29,4 @@ Last updated: 23 July 2026
 ## Contact
 
 - [LinkedIn](https://www.linkedin.com/in/nicolaluessi/): Professional profile
-- [Email](mailto:nicola@iloveseo.ch): Direct contact
+- [Email](mailto:me@nicolaluessi.ch): Direct contact
