@@ -35,6 +35,7 @@
 }
 
 :root {
+  color-scheme: light;
   --bg: #faf8f5;
   --surface: #f0ede8;
   --paper: #ffffff;
@@ -42,13 +43,71 @@
   --muted: #67615c;
   --red: #c8102e;
   --red-dark: #a50c25;
+  --red-fill: #c8102e;
+  --red-on-white: #c8102e;
+  --on-red: #ffffff;
   --line: #dcd6cf;
+  --header-bg: rgba(250, 248, 245, 0.92);
+  --header-line: rgba(220, 214, 207, 0.9);
+  --inverse-bg: #191817;
+  --inverse-ink: #ffffff;
+  --inverse-muted: rgba(255, 255, 255, 0.68);
+  --inverse-line: rgba(255, 255, 255, 0.14);
+  --card-number: #8b827a;
   --serif: "DM Serif Display", Georgia, serif;
   --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   --content: 1120px;
   --radius: 18px;
   --shadow: 0 24px 60px rgba(25, 24, 23, 0.08);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #11100f;
+  --surface: #191715;
+  --paper: #211f1d;
+  --ink: #f7f1ea;
+  --muted: #bcb2a8;
+  --red: #f05a72;
+  --red-dark: #c8102e;
+  --red-fill: #d92342;
+  --red-on-white: #c8102e;
+  --on-red: #ffffff;
+  --line: #3d3833;
+  --header-bg: rgba(17, 16, 15, 0.92);
+  --header-line: rgba(61, 56, 51, 0.9);
+  --inverse-bg: #080807;
+  --inverse-ink: #ffffff;
+  --inverse-muted: rgba(255, 255, 255, 0.7);
+  --inverse-line: rgba(255, 255, 255, 0.16);
+  --card-number: #a79c92;
+  --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --bg: #11100f;
+    --surface: #191715;
+    --paper: #211f1d;
+    --ink: #f7f1ea;
+    --muted: #bcb2a8;
+    --red: #f05a72;
+    --red-dark: #c8102e;
+    --red-fill: #d92342;
+    --red-on-white: #c8102e;
+    --on-red: #ffffff;
+    --line: #3d3833;
+    --header-bg: rgba(17, 16, 15, 0.92);
+    --header-line: rgba(61, 56, 51, 0.9);
+    --inverse-bg: #080807;
+    --inverse-ink: #ffffff;
+    --inverse-muted: rgba(255, 255, 255, 0.7);
+    --inverse-line: rgba(255, 255, 255, 0.16);
+    --card-number: #a79c92;
+    --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  }
 }
 
 *,
@@ -83,8 +142,8 @@ a {
 }
 
 ::selection {
-  background: var(--red);
-  color: #fff;
+  background: var(--red-fill);
+  color: var(--on-red);
 }
 
 :focus-visible {
@@ -99,8 +158,8 @@ a {
   z-index: 1000;
   transform: translateY(-160%);
   border-radius: 8px;
-  background: var(--ink);
-  color: #fff;
+  background: var(--inverse-bg);
+  color: var(--inverse-ink);
   padding: 10px 16px;
   font-family: var(--mono);
   font-size: 0.8rem;
@@ -121,8 +180,8 @@ a {
   gap: 28px;
   min-height: 72px;
   padding: 12px max(24px, calc((100vw - var(--content)) / 2));
-  border-bottom: 1px solid rgba(220, 214, 207, 0.9);
-  background: rgba(250, 248, 245, 0.92);
+  border-bottom: 1px solid var(--header-line);
+  background: var(--header-bg);
   backdrop-filter: blur(16px);
 }
 
@@ -172,6 +231,29 @@ a {
 .language-nav a + a {
   border-left: 1px solid var(--line);
   padding-left: 10px;
+}
+
+.theme-control {
+  display: inline-flex;
+  align-items: center;
+  justify-self: end;
+  gap: 8px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.theme-control select {
+  min-height: 36px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--paper);
+  color: var(--ink);
+  padding: 6px 10px;
+  font: inherit;
+  text-transform: uppercase;
 }
 
 .hero,
@@ -265,8 +347,8 @@ a {
 }
 
 .button-primary {
-  background: var(--red);
-  color: #fff;
+  background: var(--red-fill);
+  color: var(--on-red);
 }
 
 .button-primary:hover {
@@ -355,8 +437,8 @@ a {
   margin: 0 auto 38px;
   overflow: hidden;
   border-radius: var(--radius);
-  background: var(--ink);
-  color: #fff;
+  background: var(--inverse-bg);
+  color: var(--inverse-ink);
 }
 
 .proof-item {
@@ -365,7 +447,7 @@ a {
   justify-content: center;
   min-height: 142px;
   padding: 26px 30px;
-  border-right: 1px solid rgba(255, 255, 255, 0.14);
+  border-right: 1px solid var(--inverse-line);
 }
 
 .proof-item strong {
@@ -377,7 +459,7 @@ a {
 
 .proof-item span {
   margin-top: 10px;
-  color: rgba(255, 255, 255, 0.68);
+  color: var(--inverse-muted);
   font-size: 0.86rem;
 }
 
@@ -386,7 +468,7 @@ a {
   align-items: center;
   justify-content: center;
   padding: 18px;
-  background: var(--red);
+  background: var(--red-fill);
   font-family: var(--mono);
   font-size: 0.72rem;
   text-decoration: none;
@@ -497,7 +579,7 @@ a {
 .card-number {
   align-self: flex-end;
   margin-bottom: 22px;
-  color: #8b827a;
+  color: var(--card-number);
   font-family: var(--serif);
   font-size: 3rem;
   line-height: 1;
@@ -768,12 +850,12 @@ a {
 .award-card {
   position: relative;
   overflow: hidden;
-  background: var(--ink) !important;
-  color: #fff;
+  background: var(--inverse-bg) !important;
+  color: var(--inverse-ink);
 }
 
 .award-card > p:last-of-type {
-  color: rgba(255, 255, 255, 0.68) !important;
+  color: var(--inverse-muted) !important;
 }
 
 .award-card a {
@@ -790,13 +872,13 @@ a {
   width: min(calc(100% - 48px), var(--content));
   margin: 40px auto 0;
   border-radius: var(--radius);
-  background: var(--red);
-  color: #fff;
+  background: var(--red-fill);
+  color: var(--on-red);
   padding: clamp(42px, 8vw, 92px);
 }
 
 .contact .eyebrow {
-  color: #fff;
+  color: var(--on-red);
 }
 
 .contact h2 {
@@ -811,12 +893,12 @@ a {
 
 .button-light {
   background: #fff;
-  color: var(--red);
+  color: var(--red-on-white);
 }
 
 .button-outline-light {
   border-color: rgba(255, 255, 255, 0.52);
-  color: #fff;
+  color: var(--on-red);
 }
 
 .site-footer {
@@ -845,6 +927,11 @@ a {
   }
 
   .language-nav {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .theme-control {
     grid-column: 2;
     grid-row: 1;
   }
@@ -905,6 +992,15 @@ a {
     font-size: 0.9rem;
   }
 
+  .theme-control label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
   .primary-nav {
     gap: 16px;
     justify-content: flex-start;
@@ -951,7 +1047,7 @@ a {
   .proof-item {
     min-height: 116px;
     border-right: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+    border-bottom: 1px solid var(--inverse-line);
   }
 
   .proof-source {
