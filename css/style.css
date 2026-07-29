@@ -62,31 +62,8 @@
   --shadow: 0 24px 60px rgba(25, 24, 23, 0.08);
 }
 
-:root[data-theme="dark"] {
-  color-scheme: dark;
-  --bg: #11100f;
-  --surface: #191715;
-  --paper: #211f1d;
-  --ink: #f7f1ea;
-  --muted: #bcb2a8;
-  --red: #f05a72;
-  --red-dark: #c8102e;
-  --red-fill: #d92342;
-  --red-on-white: #c8102e;
-  --on-red: #ffffff;
-  --line: #3d3833;
-  --header-bg: rgba(17, 16, 15, 0.92);
-  --header-line: rgba(61, 56, 51, 0.9);
-  --inverse-bg: #080807;
-  --inverse-ink: #ffffff;
-  --inverse-muted: rgba(255, 255, 255, 0.7);
-  --inverse-line: rgba(255, 255, 255, 0.16);
-  --card-number: #a79c92;
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
-}
-
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme]) {
+  :root {
     color-scheme: dark;
     --bg: #11100f;
     --surface: #191715;
@@ -231,29 +208,6 @@ a {
 .language-nav a + a {
   border-left: 1px solid var(--line);
   padding-left: 10px;
-}
-
-.theme-control {
-  display: inline-flex;
-  align-items: center;
-  justify-self: end;
-  gap: 8px;
-  color: var(--muted);
-  font-family: var(--mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.theme-control select {
-  min-height: 36px;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--paper);
-  color: var(--ink);
-  padding: 6px 10px;
-  font: inherit;
-  text-transform: uppercase;
 }
 
 .hero,
@@ -931,11 +885,6 @@ a {
     grid-row: 1;
   }
 
-  .theme-control {
-    grid-column: 2;
-    grid-row: 1;
-  }
-
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
@@ -990,15 +939,6 @@ a {
 
   .site-brand span {
     font-size: 0.9rem;
-  }
-
-  .theme-control label {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip-path: inset(50%);
-    white-space: nowrap;
   }
 
   .primary-nav {
