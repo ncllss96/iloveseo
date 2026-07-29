@@ -29,11 +29,20 @@
   <meta name="twitter:image" content="https://nicolaluessi.ch/og-image.png">
   <meta name="twitter:image:alt" content="Nicola Lüssi | audience growth, editorial SEO and product">
 
+  <script>
+    try {
+      const savedTheme = localStorage.getItem("nicolaluessi-theme")
+      if (savedTheme === "light" || savedTheme === "dark") {
+        document.documentElement.dataset.theme = savedTheme
+      }
+    } catch {}
+  </script>
   <link rel="icon" href="/favicon.png" type="image/png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/dm-serif-display-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/theme.js" defer></script>
 
   <script type="application/ld+json">
   {
@@ -55,7 +64,7 @@
         "description": "Profile of Nicola Lüssi, Head of Growth Lab at Tamedia, working across audience growth, editorial SEO, product, automation and AI.",
         "inLanguage": "en",
         "dateCreated": "2026-03-25T11:02:04+01:00",
-        "dateModified": "2026-07-29T10:40:02+02:00",
+        "dateModified": "2026-07-29T10:50:22+02:00",
         "isPartOf": {"@id": "https://nicolaluessi.ch/#website"},
         "mainEntity": {"@id": "https://nicolaluessi.ch/#person"}
       },
@@ -170,6 +179,14 @@
       <a href="#tools">Tools</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="theme-control">
+      <label for="theme-select">Theme</label>
+      <select id="theme-select" name="theme">
+        <option value="system">System</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </div>
   </header>
 
   <main id="main">
