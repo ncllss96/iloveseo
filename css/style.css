@@ -658,6 +658,10 @@ a {
   font-size: 0.92rem;
 }
 
+.capability-grid article:last-child {
+  grid-column: span 2;
+}
+
 .education {
   padding-top: 62px;
 }
@@ -918,6 +922,10 @@ a {
   }
 
   .impact-card-featured {
+    grid-column: auto;
+  }
+
+  .capability-grid article:last-child {
     grid-column: auto;
   }
 
