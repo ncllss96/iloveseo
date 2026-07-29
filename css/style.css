@@ -662,6 +662,56 @@ a {
   grid-column: span 2;
 }
 
+.tools {
+  padding-block: 108px;
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.tool-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+  padding: clamp(28px, 4vw, 42px);
+}
+
+.tool-card h3 {
+  margin: 12px 0 24px;
+  font-family: var(--serif);
+  font-size: clamp(1.4rem, 2.3vw, 1.85rem);
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.tool-card > p:not(.card-kicker) {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.tool-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tool-list li {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 7px 11px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.3;
+}
+
 .education {
   padding-top: 62px;
 }
@@ -830,6 +880,10 @@ a {
   .capability-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .tool-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 680px) {
@@ -915,6 +969,7 @@ a {
   .impact-grid,
   .outcome-list,
   .capability-grid,
+  .tool-grid,
   .education-grid,
   .recognition-grid,
   .earlier-grid {
