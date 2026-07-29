@@ -14,6 +14,12 @@ Last updated: 29 July 2026
 
 - SEO Helper: Nicola initiated this CMS-native editorial product, designed its 100-point scoring model, defined its checks and feedback, translated SEO standards into product requirements and led validation with the development team
 
+## Working stack
+
+- Audience and analytics: Google Search Console, Google Analytics 4, Piano Analytics, Parse.ly, NewzDash, Google Trends, Google Sheets and Looker Studio. Google Trends and Google Sheets are particular strengths, and Nicola has taught Google Trends in repeated newsroom workshops
+- SEO and publishing: SISTRIX, Semrush, Ahrefs, Screaming Frog, PageSpeed Insights and Unity CMS
+- Automation and AI-assisted prototyping: Google Apps Script, n8n, Slack automation, API and webhook integrations, Claude, Claude Code and Codex. Nicola uses AI-assisted coding to prototype Slack apps, integrations and internal tools
+
 ## Recognition and contribution
 
 - [INMA 30 Under 30 profile](https://www.inma.org/blogs/main/post.cfm/inma-recognises-global-news-media-s-next-generation-in-30-under-30-awards): Recognition in the Management category in 2025
