@@ -10,6 +10,10 @@ Last updated: 29 July 2026
 
 - [English profile](https://nicolaluessi.ch/): Canonical English biography and online CV
 
+## Selected work
+
+- SEO Helper: Nicola initiated this CMS-native editorial product, designed its 100-point scoring model, defined its checks and feedback, translated SEO standards into product requirements and led validation with the development team
+
 ## Recognition and contribution
 
 - [INMA 30 Under 30 profile](https://www.inma.org/blogs/main/post.cfm/inma-recognises-global-news-media-s-next-generation-in-30-under-30-awards): Recognition in the Management category in 2025
