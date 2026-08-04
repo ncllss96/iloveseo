@@ -53,12 +53,11 @@
   --inverse-ink: #ffffff;
   --inverse-muted: rgba(255, 255, 255, 0.68);
   --inverse-line: rgba(255, 255, 255, 0.14);
-  --card-number: #8b827a;
   --serif: "DM Serif Display", Georgia, serif;
   --sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   --content: 1120px;
-  --radius: 18px;
+  --radius: 8px;
   --shadow: 0 24px 60px rgba(25, 24, 23, 0.08);
 }
 
@@ -82,7 +81,6 @@
     --inverse-ink: #ffffff;
     --inverse-muted: rgba(255, 255, 255, 0.7);
     --inverse-line: rgba(255, 255, 255, 0.16);
-    --card-number: #a79c92;
     --shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
   }
 }
@@ -286,7 +284,7 @@ a {
   justify-content: center;
   min-height: 48px;
   border: 1px solid transparent;
-  border-radius: 999px;
+  border-radius: 6px;
   padding: 11px 20px;
   font-family: var(--mono);
   font-size: 0.78rem;
@@ -377,7 +375,7 @@ a {
   min-height: 40px;
   padding: 0 13px;
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 6px;
   font-family: var(--mono);
   font-size: 0.68rem;
   text-decoration: none;
@@ -530,15 +528,6 @@ a {
   grid-column: 1 / -1;
 }
 
-.card-number {
-  align-self: flex-end;
-  margin-bottom: 22px;
-  color: var(--card-number);
-  font-family: var(--serif);
-  font-size: 3rem;
-  line-height: 1;
-}
-
 .impact-card h3,
 .timeline h3,
 .capability-grid h3,
@@ -595,7 +584,7 @@ a {
 
 .tag-list li {
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 4px;
   padding: 5px 10px;
   color: var(--muted);
   font-family: var(--mono);
@@ -740,7 +729,7 @@ a {
 
 .tool-list li {
   border: 1px solid var(--line);
-  border-radius: 999px;
+  border-radius: 4px;
   padding: 7px 11px;
   color: var(--muted);
   font-family: var(--mono);

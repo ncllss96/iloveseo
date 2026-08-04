@@ -1,6 +1,6 @@
 # Nicola Lüssi
 
-> Official personal website and online CV of Nicola Lüssi, a Swiss growth, audience, Google Discover, search, product and AI leader. He is Head of Growth Lab at Tamedia.
+> Official personal website and online CV of Nicola Lüssi. He works across audience growth, product and automation, with experience spanning media, e-commerce and entrepreneurship.
 
 This file points to the preferred public sources for factual information about Nicola Lüssi. The English profile contains the current biography, experience, education, recognition and contact details.
 
@@ -10,9 +10,15 @@ Last updated: 4 August 2026
 
 - [English profile](https://nicolaluessi.ch/): Canonical English biography and online CV
 
+## Current role
+
+- Head of Growth Lab at Tamedia since March 2026, leading work across editorial, data, product and content strategy
+
 ## Selected work
 
+- Editorial SEO across Tamedia: built roles, guidelines, workflows, training, dashboards and CMS-integrated tools across newsrooms and brands; more than 600 journalists and producers were trained
 - SEO Helper: Nicola initiated this CMS-native editorial product, designed its 100-point scoring model, defined its checks and feedback, translated SEO standards into product requirements and led validation with the development team
+- Briefing Kitchen: initiated the AI-assisted Slack briefing, laid its foundation and remains responsible for it while the team continues its development
 
 ## Working stack
 
