@@ -822,6 +822,67 @@ a {
   color: #f5657a;
 }
 
+.personal-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(0, 1.28fr);
+  gap: clamp(48px, 8vw, 112px);
+  align-items: start;
+}
+
+.personal-layout .section-heading {
+  position: sticky;
+  top: 118px;
+  margin-bottom: 0;
+}
+
+.personal-copy {
+  max-width: 720px;
+}
+
+.personal-copy p {
+  margin: 0 0 24px;
+  color: var(--muted);
+  font-size: clamp(1.02rem, 1.5vw, 1.16rem);
+}
+
+.personal-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.personal-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 38px;
+}
+
+.personal-photo {
+  overflow: hidden;
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.personal-photo picture,
+.personal-photo img {
+  display: block;
+  width: 100%;
+}
+
+.personal-photo img {
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.personal-photo figcaption {
+  padding: 15px 17px 17px;
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
 .contact {
   width: min(calc(100% - 48px), var(--content));
   margin: 40px auto 0;
@@ -901,6 +962,15 @@ a {
 
   .about-layout {
     grid-template-columns: 1fr;
+  }
+
+  .personal-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .personal-layout .section-heading {
+    position: static;
+    margin-bottom: 0;
   }
 
   .impact-grid {
@@ -1031,6 +1101,10 @@ a {
 
   .capability-grid h3 {
     min-height: auto;
+  }
+
+  .personal-gallery {
+    grid-template-columns: 1fr;
   }
 
   .contact {
