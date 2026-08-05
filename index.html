@@ -34,7 +34,7 @@
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="preload" href="/assets/fonts/dm-serif-display-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/dm-serif-display-italic-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/css/style.css?v=20260804-3">
+  <link rel="stylesheet" href="/css/style.css?v=20260805-1">
 
   <script type="application/ld+json">
   {
@@ -56,7 +56,7 @@
         "description": "Profile of Nicola Lüssi, working across audience growth, product and automation, with experience spanning media, e-commerce and entrepreneurship.",
         "inLanguage": "en",
         "dateCreated": "2026-03-25T11:02:04+01:00",
-        "dateModified": "2026-08-04T16:22:06+02:00",
+        "dateModified": "2026-08-05T08:05:00+02:00",
         "isPartOf": {"@id": "https://nicolaluessi.ch/#website"},
         "mainEntity": {"@id": "https://nicolaluessi.ch/#person"}
       },
@@ -162,7 +162,7 @@
 
   <header class="site-header">
     <a class="site-brand" href="/" aria-label="Nicola Lüssi, home">
-      <img src="/heart-56.png" width="28" height="28" alt="">
+      <span class="site-monogram" aria-hidden="true">NL</span>
       <span>Nicola Lüssi</span>
     </a>
     <nav class="primary-nav" aria-label="Main navigation">
@@ -223,10 +223,10 @@
       <div class="proof-item">
         <strong>30 under 30</strong>
         <span>INMA Management Award, 2025</span>
+        <a class="proof-source" href="https://www.inma.org/blogs/main/post.cfm/inma-recognises-global-news-media-s-next-generation-in-30-under-30-awards" target="_blank" rel="noopener noreferrer">
+          Source: INMA <span aria-hidden="true">↗</span>
+        </a>
       </div>
-      <a class="proof-source" href="https://www.inma.org/blogs/main/post.cfm/inma-recognises-global-news-media-s-next-generation-in-30-under-30-awards" target="_blank" rel="noopener noreferrer">
-        Source: INMA <span aria-hidden="true">↗</span>
-      </a>
     </section>
 
     <section class="section about" id="about" aria-labelledby="about-title">
@@ -255,17 +255,21 @@
 
       <div class="impact-grid">
         <article class="impact-card impact-card-featured">
-          <p class="card-kicker">Tamedia, editorial SEO</p>
-          <h3>Editorial SEO across Tamedia</h3>
-          <p>As Head SEO, I built editorial SEO practices from the ground up across Tamedia newsrooms and brands. That included roles, guidelines, workflows, training, dashboards and CMS-integrated tools. I led the eight-week “Reach Offensive” and helped establish the permanent cross-functional Reach Team that followed. More than 600 journalists and producers were trained.</p>
+          <header class="impact-featured-heading">
+            <p class="card-kicker">Tamedia, editorial SEO</p>
+            <h3>Editorial SEO across Tamedia</h3>
+          </header>
+          <div class="impact-featured-copy">
+            <p>As Head SEO, I built editorial SEO practices from the ground up across Tamedia newsrooms and brands. That included roles, guidelines, workflows, training, dashboards and CMS-integrated tools. I led the eight-week “Reach Offensive” and helped establish the permanent cross-functional Reach Team that followed. More than 600 journalists and producers were trained.</p>
+            <a class="text-link" href="https://www.inma.org/blogs/main/post.cfm/inma-recognises-global-news-media-s-next-generation-in-30-under-30-awards" target="_blank" rel="noopener noreferrer">
+              Read the independent INMA profile <span aria-hidden="true">↗</span>
+            </a>
+          </div>
           <ul class="outcome-list">
             <li><strong>Editorial SEO practices</strong> built from the ground up across newsrooms and brands</li>
             <li><strong>600+ participants</strong> across editorial teams</li>
             <li><strong>Permanent Reach Team</strong> established after the eight-week initiative</li>
           </ul>
-          <a class="text-link" href="https://www.inma.org/blogs/main/post.cfm/inma-recognises-global-news-media-s-next-generation-in-30-under-30-awards" target="_blank" rel="noopener noreferrer">
-            Read the independent INMA profile <span aria-hidden="true">↗</span>
-          </a>
         </article>
 
         <article class="impact-card">
@@ -584,7 +588,10 @@
   </main>
 
   <footer class="site-footer">
-    <p>© 2026 Nicola Lüssi</p>
+    <a class="footer-brand" href="/" aria-label="Nicola Lüssi, home">
+      <span class="site-monogram" aria-hidden="true">NL</span>
+      <span>© 2026 Nicola Lüssi</span>
+    </a>
   </footer>
 </body>
 </html>
