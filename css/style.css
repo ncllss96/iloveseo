@@ -59,9 +59,9 @@
   --content: 1120px;
   --radius: 8px;
   --shadow: 0 24px 60px rgba(25, 24, 23, 0.08);
-  --space-section-tight: clamp(58px, 6vw, 78px);
-  --space-section: clamp(74px, 8vw, 104px);
-  --space-section-loose: clamp(88px, 10vw, 124px);
+  --space-section-tight: clamp(40px, 4.5vw, 56px);
+  --space-section: clamp(56px, 6vw, 76px);
+  --space-section-loose: clamp(72px, 8vw, 96px);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -454,7 +454,7 @@ a {
 
 .section-heading {
   max-width: 760px;
-  margin-bottom: 54px;
+  margin-bottom: clamp(34px, 4.5vw, 48px);
 }
 
 .section-heading h2,
@@ -732,7 +732,7 @@ a {
 }
 
 .tools {
-  padding-block: var(--space-section-loose);
+  padding-block: var(--space-section);
 }
 
 .tool-grid {
@@ -782,7 +782,7 @@ a {
 }
 
 .education {
-  padding-block: var(--space-section-tight) var(--space-section);
+  padding-block: var(--space-section-tight);
 }
 
 .education-grid {
@@ -863,7 +863,7 @@ a {
 }
 
 #impact {
-  padding-block: var(--space-section-tight) var(--space-section-loose);
+  padding-block: var(--space-section-tight) var(--space-section);
 }
 
 #impact .section-heading,
@@ -945,7 +945,7 @@ a {
 
 .contact {
   width: min(calc(100% - 48px), var(--content));
-  margin: 40px auto 0;
+  margin: 0 auto;
   border-radius: var(--radius);
   background: var(--red-fill);
   color: var(--on-red);
@@ -1130,11 +1130,11 @@ a {
   }
 
   .section {
-    padding-block: 78px;
+    padding-block: var(--space-section-tight);
   }
 
   .section-heading {
-    margin-bottom: 38px;
+    margin-bottom: 32px;
   }
 
   .impact-grid,
