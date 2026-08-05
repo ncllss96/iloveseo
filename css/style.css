@@ -59,6 +59,8 @@
   --content: 1120px;
   --radius: 8px;
   --shadow: 0 24px 60px rgba(25, 24, 23, 0.08);
+  --focus-inner: #ffffff;
+  --focus-outer: #191817;
   --space-section-tight: clamp(40px, 4.5vw, 56px);
   --space-section: clamp(56px, 6vw, 76px);
   --space-section-loose: clamp(72px, 8vw, 96px);
@@ -117,6 +119,16 @@ img {
 
 a {
   color: inherit;
+  cursor: pointer;
+  transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+a:not(.button) {
+  box-shadow: inset 0 -1px 0 transparent;
+}
+
+a:not(.button):hover {
+  box-shadow: inset 0 -1px 0 currentColor;
 }
 
 ::selection {
@@ -125,8 +137,9 @@ a {
 }
 
 :focus-visible {
-  outline: 3px solid var(--red);
-  outline-offset: 4px;
+  outline: 3px solid var(--focus-inner);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 6px var(--focus-outer);
 }
 
 .skip-link {
@@ -305,7 +318,7 @@ a {
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;
-  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease;
+  transition: transform 160ms ease, background-color 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
 .button:hover {
@@ -688,6 +701,18 @@ a {
   font-family: var(--mono);
   font-size: 0.75rem;
   text-transform: uppercase;
+  box-shadow: inset 0 -1px 0 transparent;
+  transition: color 180ms ease, box-shadow 180ms ease;
+}
+
+.earlier-experience summary:hover {
+  box-shadow: inset 0 -1px 0 currentColor;
+}
+
+a:focus-visible:not(.button),
+a.button:focus-visible,
+.earlier-experience summary:focus-visible {
+  box-shadow: 0 0 0 6px var(--focus-outer);
 }
 
 .earlier-grid {
